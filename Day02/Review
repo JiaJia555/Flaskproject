@@ -1,0 +1,54 @@
+一. Flask视图和URL
+1. url_for
+进行反转，把函数名转成URL
+    url_for("函数名",参数1,参数2)
+    url_for("article",id=1)
+    如果参数2不存在，会以?形式当作参数
+优势：
+    1.URL被修改，只要函数名没有修改就不用替换，更灵活
+    2.url_for()函数会转义一些特殊字符和unicode字符
+
+2. 注意事项
+    url末尾加反斜线
+    改变端口 app.run(debug=True, port=xxx, host=xxx)
+
+3.指定HTTP方法
+    @app.route("路由"，methods=["请求方法"])
+
+    GET请求
+    request.args.get("xx")
+    POST请求
+    request.form.get("xxx")
+
+4. 重定向
+    return redirect(url_for("函数名字"))
+    301 永久
+    302 暂时
+
+5. 函数的返回值
+    1.字符串
+        return "字符串"
+    2. 元组
+        return "字符串"，状态码
+    3.字典
+        return{"name":"jiajia"}
+    4. Response
+        return Response("字符串", "状态码",mimetype="")
+        make response
+
+
+二. 模板
+1. 模板渲染
+    先创建一个目录，templates, 将模板文件放到目录中
+    return render_template("模板文件名")
+2. 指定模板目录
+    template_folder="模板目录"
+3.模板传参
+     直接传参: {{ username }}
+     return render_template("index.html", username="xxx" )
+     字典传参:context.username
+     context = {
+            "xxx": "xxx"
+        }
+     return render_template("index.html", context=context)
+     return render_template("index.html", **context)

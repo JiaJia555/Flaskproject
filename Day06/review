@@ -1,0 +1,41 @@
+1.数据库优点
+• 持久化存储
+• 读写速度极高
+• 保证数据的有效性
+• 对程序支持性非常好，容易扩展
+
+2. 数据库的组成
+    数据行(记录)
+    数据列(字段)
+    数据表(数据行的集合)
+    数据库(数据表的集合)
+
+3.安装
+PHPstudy_pro 开启MySQL服务器
+SQLyog 连接客户端
+
+Path:C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Users\shelleyfu\Downloadbyjia\Git\cmd;C:\Users\shelleyfu\Downloadbyjia\phpstudy_pro\Extensions\MySQL\bin
+
+4. SQLyog如何创建数据库
+右键 创建数据库--命名flask_demo--utf-8/utf_gneralci
+
+5.模块安装
+cd C:\Users\shelleyfu\Downloadbyjia\Flask框架
+pipenv shell        进入到虚拟环境
+pip install pymysql
+pip install SQLAlchemy
+pip install mysql-connector
+
+5. 通过SQLALchemy连接数据库 UPHPD
+    from sqlalchemy import create_engine
+    USERNAME = 'root'
+    PASSWORD = 'root'
+    HOSTNAME = "127.0.0.1"
+    PORT = 3306
+    DATABASE = 'demo0417'
+    DB_URL = "mysql+mysqlconnector://{}:{}@{}:{}/{}?charset-utf-8".format(USERNAME, PASSWORD, HOSTNAME, PORT, DATABASE)
+
+engine = create_engine(DB_URL)
+orm
+ORM: Object Relationship Mapping,对象关系映射,通过ORM我们可以通过类的方式去操作数据库,而不用写原生的SQL语句
+表-类,行-实例,字段-属性

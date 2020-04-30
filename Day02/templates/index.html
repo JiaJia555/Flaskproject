@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Document</title>
+</head>
+<body>
+    <input type="text" class="s_ipt" name="wd" id="kw" maxlength="100" autocomplete="off">
+    <h1>{{ username }}</h1>
+    <h2>{{ age }}</h2>
+    {# <h2>{{context.username}}</h2> #}
+    <h4>{{ books.Python}}</h4>
+<!--    字典嵌套取值-->
+    {# <h4>{{ books[0]}}</h4> 报错#}
+    {# <h4>{{ books['Python']}}</h4> #}
+<!--    列表取值-->
+    <h4>{{ book.3 }}</h4>
+    <h4>{{ book[1] }}</h4>
+</body>
+</html>

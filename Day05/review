@@ -1,0 +1,59 @@
+1. 视图高级
+    添加URL规则
+    app.add_url_rule(路径, endpoint="geren", view_func=profile)
+2. 类视图
+    2.1 标准类视图
+    from flask import views
+
+    class XxxXxx(views.View):
+        # 这个方法必须实现
+        def dispatch_request(self):
+            return xxx
+
+    app.add_url_rule("URL", endpoint="geren", view_func=profile)
+
+    2.2 基于调度方法的类视图
+    from flask import views
+
+    class XxxXxx(views.MethodView):
+        def get(self):
+            pass
+
+        def get(self):
+            pass
+
+    app.add_url_rule("URL", endpoint="geren", view_func=profile)
+
+3. 蓝图
+    拆分模块，把模块独立出来
+    1.创建文件夹blueprints
+    2.把模块放到这个目录下
+    news.py 蓝图文件
+    from flask import Blueprint
+
+    xxx=Blueprint('news',__name__,url_prefix='/xxx/')
+
+    @xxx.route("/")
+    def xxx():
+        return xxx
+
+    app.py 主文件
+    from blueprints.news import xxx
+    app.register_blueprint(xxx)
+
+4. 寻找模板文件
+    寻找templates目录下的模板文件
+    如果templates目录下没有找到,template_folder存在,在template_folder目录下面寻找模板文件
+5. 寻找静态文件
+    寻找static目录下的静态文件
+    如果static目录下没有找到,static_folder存在,在static_folder目录下面寻找模板文件
+    在static目录下面
+    <link rel="stylesheet" href="{{ url_for('static', filename='news.css') }}">
+    在蓝图中的目录下面
+    <link rel="stylesheet" href="{{ url_for('news.static', filename='news.css') }}">
+
+6. 子域名
+    主app: app.config["SERVER_NAME"]='xxx.com.port'
+    修改hosts文件:   127.0.0.1 =>futongxue.com
+                     127.0.0.1 =>cms.futongxue.com
+

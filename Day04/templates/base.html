@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css')}}">
+    <script src="{{ url_for('static', filename='js/index.js')}}"></script>
+
+</head>
+<body>
+    {% block header %}
+        <ul>
+            <li>首页</li>
+            <li>课程详情</li>
+            <li>视频教程</li>
+            <li>关于我们</li>
+        </ul>
+    {% endblock %}
+
+    {% block content %}
+        <h1>这是首页</h1>
+    {% endblock %}
+
+    {% block footer %}
+    <div class="footer">
+        这是网站底部
+    </div>
+    {% block foo %}
+        友情链接
+    {% endblock %}
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    首页
+{% endblock %}
+
+{% block content %}
+<img src="{{ url_for('static', filename='images/demo.jpg')}}" alt="">
+    {{ super() }}
+    <h1>这是子模板的首页</h1>
+    <p>逻辑教育</p>
+{% endblock %}
+
+{% block footer %}
+    {% block foo %}
+        foo
+    {% endblock %}
+{% endblock %}
+
+<p>这是我自己定义的p标签</p>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <p>{{ username }}</p>
+    <p>{{ age|abs }}</p>
+    <p>{{ name|default('这个人很懒，没有写任何签名...') }}</p>
+    <!--    自定义转义-->
+    <!--    关闭转义-->
+    <!--    {% autoescape off %}-->
+    <!--    <p>{{ es }}</p>-->
+    <!--    {% endautoescape %}-->
+    <!--    标记安全-->
+    <!--    <p>{{ es|safe }}</p>-->
+
+    <p>{{ h1|safe }}</p>
+    <p>{{ books|first}}</p>
+    <p>{{ books|last}}</p>
+    <p>{{ books|length}}</p>
+    <p>{{ books|first|length}}</p>
+    {# <p>{{ h1|safe|length| }}</p>报错 #}
+    <p>{{books|last|last}}</p>
+    <p>{{ username|upper }}</p>
+    <p>{{ username|replace("hello","HELLO")}}</p>
+<!--    不会报错 但是没有显示 语法错误会报错-->
+    <p>{{ abc|replace("hello","HELLO")}}</p>
+    <p>{{username|truncate(length=5) }}</p>
+    <p>{{es|striptags }}</p>
+    <p>{{address|wordcount }}</p>
+    <p>{{address|my_cut }}</p>
+    <p>文章发表时间:{{ now_time|handle_time}}</p>
+
+</body>
+</html>

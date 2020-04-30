@@ -1,0 +1,63 @@
+一.模板过滤器
+1. 内置模板过滤器
+    abs(value)：返回一个数值的绝对值。
+    default(value,default_value,boolean=false)：如果当前变量没有值，则会使用参数中的值来代替。
+        当布尔值为flase的时候都会显示这里的内容，当内容不存在的时候就会显示default内容
+    escape(value)或e：转义字符，会将<、>等符号转义成HTML中的符号。例如：content|escape或content|e。
+        自动转移js代码p>&lt;script&gt;alert(&#39;hello&#39;)&lt;/script&gt;</p>
+    lower(value)：将字符串转换为小写。
+    upper(value)：将字符串转换为小写。
+    replace(value,old,new)： 替换将old替换为new的字符串。
+    truncate(value,length=255,killwords=False)：截取length长度的字符串。
+    striptags(value)：删除字符串中所有的HTML标签，如果出现多个空格，将替换成一个空格
+    wordcount(s)：计算一个长字符串中单词的个数
+2. 自定义过滤器
+    @app.template_filter('自定义过滤器的名字')
+
+二. 控制语句
+if
+    {% if 判断条件 %}
+    {% endif %}
+for
+    {% for xx in xxx %}
+    {% endfor %}
+遍历列表
+    {% for user in users %}
+        <p>{{ user }}</p>
+    {% endfor %}
+遍历字典
+    {% for key,value in users.items() %}
+        <p>{{ key }}</p>
+        <p>{{ value }}</p>
+    {% endfor %}
+
+获取循环的状态
+    loop.index      从1开始
+    loop.index0     从0开始
+
+三 宏和imort 语句
+宏
+    {% macro 宏名字(参数) %}
+        xxx
+    {% endmacro %}
+import 语句
+    {% import "xxx.html" as xxx %}
+    {% from "xxx.html" import 宏名字 as xxx %}
+    参数传在宏模板
+    {% import "xxx.html" as xxx with context %}
+
+四. include和set
+include
+    {% include "xxx.html "%}
+set赋值语句（在模板中赋值）
+    {% set name="xxx" %}        #全局
+
+    {% with %}                  #局部
+        {% set xxx="" %}
+    {% endwith %}
+
+    {% with xxx=""%}                  #局部
+    {% endwith %}
+
+include 把模板(html)文件引入到另外一个模板文件
+import macro.html   宏文件直接导入到python文件

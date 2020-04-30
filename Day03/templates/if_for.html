@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% include 'common/header.html' %}
+
+{% import 'macro.html' as macro with context %}
+{% from 'macro.html' import input %}
+
+{{ macro.input(value="有值了") }}
+{{ input('password', type="password") }}
+<input type="text" value="name">
+
+<!--{{ 变量 }}-->
+{# {% 函数 if for %} #}
+
+{% if username == "jiajia" %}
+    <p>{{ username }}</p>
+{% else %}
+    <p>当前用户名不是佳佳...</p>
+{% endif %}
+
+{% for book in books %}
+
+    <p>{{ loop.index }}</p>
+    <p>{{ book }}</p>
+{% endfor %}
+
+{% for user in users %}
+    <p>{{ user }}</p>
+{% endfor %}
+
+{% for key,value in users.items() %}
+    <p>{{ key }}</p>
+    <p>{{ value }}</p>
+{% endfor %}
+
+
+
+<hr>
+{% for key in users.keys() %}
+    <p>{{ key }}</p>
+{% endfor %}
+
+<hr>
+{% for value in users.values() %}
+    <p>{{ loop.first }}</p>
+    <p>{{ value }}</p>
+{% endfor %}
+
+{% include 'common/footer.html' %}
+
+</body>
+</html>

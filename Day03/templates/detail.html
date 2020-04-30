@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% set name='jiajia' %}
+{% include 'common/header.html' %}
+    <h1>这是我的详情页面</h1>
+    <p>{{ name }}</p>
+{% include 'common/footer.html' %}
+
+{% with %}
+    {% set name='这是局部的' %}
+    {{ name }}
+{% endwith %}
+
+{% with foo=44 %}
+    <p>{{ foo }}</p>
+{% endwith %}
+
+{% with dic={"name":"jiajia"} %}
+    <p>{{ dic }}</p>
+    <p>{{ dic.keys() }}</p>
+{% endwith %}
+
+{% with lis =[1, 2, 3] %}
+    <p>{{ lis }}</p>
+    {% for l in lis %}
+    <p>{{ l }}</p>
+    {% endfor %}
+{% endwith %}
+
+</body>
+</html>
