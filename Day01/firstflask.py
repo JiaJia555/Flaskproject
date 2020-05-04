@@ -29,7 +29,7 @@ def hello_world():
     # c = a/b
     return "hello world"
 
-@app.route("/jiajia")
+@app.route("/jiajia/")
 def hello_jiajia():
     return "这是我的第一个Flask页面"
 

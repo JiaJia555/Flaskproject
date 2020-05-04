@@ -20,7 +20,9 @@ Path:C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Clien
 右键 创建数据库--命名flask_demo--utf-8/utf_gneralci
 
 5.模块安装
-cd C:\Users\shelleyfu\Downloadbyjia\Flask框架
+pip insall pipenv
+e:
+cd
 pipenv shell        进入到虚拟环境
 pip install pymysql
 pip install SQLAlchemy
@@ -35,7 +37,49 @@ pip install mysql-connector
     DATABASE = 'demo0417'
     DB_URL = "mysql+mysqlconnector://{}:{}@{}:{}/{}?charset-utf-8".format(USERNAME, PASSWORD, HOSTNAME, PORT, DATABASE)
 
-engine = create_engine(DB_URL)
-orm
+    engine = create_engine(DB_URL)
+6. 执行原生的SQL语句
+    with engine.connect() as conn:
+    conn.execute("原生的SQL语句")
+7. ORM
 ORM: Object Relationship Mapping,对象关系映射,通过ORM我们可以通过类的方式去操作数据库,而不用写原生的SQL语句
-表-类,行-实例,字段-属性
+
+优点：
+    安全
+    封装原生的SQL语句
+    易用、简洁
+ORM映射：
+    表-类
+    行-实例
+    字段-属性
+
+使用ORM映射到数据库
+    rom sqlalchemy import create_engine
+    from sqlalchemy import Column, Integer, String
+    from sqlalchemy.ext.declarative import declarative_base
+
+
+    # 连接数据库 UPHPD
+    # 地址
+    HOSTNAME = "127.0.0.1"
+    # 数据库
+    DATABASE = 'demo0417' # 刚刚新建的数据库
+    # 端口
+    PORT = 3306
+    # 用户名和密码
+    USERNAME = 'root'
+    PASSWORD = 'root'
+    # 创建数据库引擎
+    # dialect(mysql/sqlmap)+driver://username:password@host:port/database?charset=utf8
+    DB_URL = "mysql+mysqlconnector://{}:{}@{}:{}/{}".format(USERNAME, PASSWORD, HOSTNAME, PORT, DATABASE)
+    engine = create_engine(DB_URL)
+    Base = declarative_base(engine)
+
+    class User(Base):
+        __tablename__='表名'
+
+    字段的定义
+    id = Column(Integer, 主键，自增)
+    nullable = False 非空
+    name = Column(String(50), nullable=False)
+    gender = Column(Integer, default=1, comment="1为男，2为女")
