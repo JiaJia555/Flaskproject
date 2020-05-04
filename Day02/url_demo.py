@@ -3,7 +3,7 @@ from flask import app,Response, make_response
 
 app = Flask(__name__)
 
-# 1. 需求:根据方法名推测路由url值 url_for
+# 1. 需求:根据方法名推测路由url路径值 url_for
 
 @app.route("/")
 def index():

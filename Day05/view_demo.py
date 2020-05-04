@@ -109,7 +109,7 @@ class ProfileView(views.View):
 
 
 
-# 添加URL规则
+# 添加URL规则 app.add_url_rule
 # app.add_url_rule("/profile/", endpoint="geren", view_func=profile)
 # url_for方法名优先用endpoint给定的值，没有再用view_func给的值
 # app.add_url_rule("/list/",view_func=ListView.as_view('list2'))

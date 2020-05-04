@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from datetime import datetime
 
 app = Flask(__name__)
-# 模板文件自动更新
+# 配置文件 模板文件自动更新
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 

@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0ad09a7-349d-44d4-8622-86520a7e01c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day07/flask_orm_curd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day07/flask_orm_curd_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day07/flask_orm_query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day07/flask_orm_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day07/review" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Flask框架.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask框架.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day06/review" beforeDir="false" afterPath="$PROJECT_DIR$/Day06/review" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/url_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day02/url_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day04/template_extend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day04/template_extend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,4 @@
-# https://blog.csdn.net/weixin_43883022/article/details/89703725
+
 from flask import Flask, render_template
 # static_folder="" 修改static目录位置
 app = Flask(__name__)
@@ -17,6 +17,7 @@ def list_article():
 
 if __name__=='__main__':
     app.run(debug=True)
+
 # 1.模板继承
 #     子模版不能直接修改父模板的内容
 #     子模版通过block修改里面的内容，可以全部修改
@@ -25,7 +26,8 @@ if __name__=='__main__':
 #     子模版不可以继承多个父模板
 #     {{ super() }}调用父模板的block
 #     模板继承放到Block代码块的上面
-
+# 参考链接
+# https://blog.csdn.net/weixin_43883022/article/details/89703725
 
 
 
