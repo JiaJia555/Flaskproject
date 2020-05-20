@@ -1,0 +1,20 @@
+第一次运行报错
+    raise Exception("Install 'email_validator' for email validation support.")
+    Exception: Install 'email_validator' for email validation support.
+    pip install email_validator
+
+https://blog.csdn.net/qq_36390239/article/details/98847888
+
+1. 常用的验证器
+EqualTo         验证两个变量是否相等
+Email           邮箱
+InputRequired   必须输入
+Regexp          正则表达式
+URL             URL 格式
+NumberRange     数字范围
+文件上传（列表）
+FileRequired    文件必须上传
+FileAllowed     文件允许上传的类型
+前段的form 表单中encotype属性
+CombinedMultiDict()
+

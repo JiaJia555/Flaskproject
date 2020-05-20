@@ -1,0 +1,13 @@
+1. flask resultful 参数解析
+    类似WTForms来验证提交的数据是否合法的包，叫做reqparse
+2. 输出字段
+3. 重命名
+4. 默认值 如果模型中有这个字段 而且有值 default 没有作用
+
+e:
+cd E:\PythonProjects\Flask框架
+pipenv shell
+cd E:\PythonProjects\Flask框架\Day13
+python manage.py db init
+python manage.py db migrate
+python manage.py db upgrade

@@ -1,0 +1,53 @@
+1. cookie和session
+cookie
+    HTTP 无状态 cookie是用来记录用户信息的 保存在浏览器中
+    domain 子域名
+    from flask import Response
+    @app.route("/")
+    def index():
+        res = Response('逻辑教育')
+        res.set_cookie(key, value, max_age=30)
+        return res
+session
+    保存在服务器中的， 但是flask中将session加密保存cookie保存到浏览器中
+    from flask import session
+    app.config['SECRET_KEY'] = os.urandom(24) 随机字符串
+    def xxx():
+    # session 类似于字典
+    session['username'] = 'futongxue'
+    session.get("xxx")      取值
+    session.pop("xxx")      删除键值对应得session
+    session.clear()         清空session
+
+
+2. Flask上下文
+
+request 用法 对象一般用来保存一些请求的变量 比如method、args、form等。
+    https://blog.csdn.net/u011146423/article/details/88191225
+
+session：请求上下文上的对象。这个对象一般用来保存一些会话信息。
+    session['username'] = 'futongxue'
+    username = session.get('username')
+
+current_app 不能再视图函数外部调用
+    current_app.name
+    current_app.config['DEBUG']
+    app.config 只能读取绑定在app的配置文件
+
+g：应用上下文上的对象。处理请求时用作临时存储的对象。
+    g 对象每次刷新页面 会被重置
+    g.username = username
+
+
+hook 钩子函数
+
+@app.before_first_request：处理第一次请求之前执行
+@app.before_request：在每次请求之前执行。通常可以用这个装饰器来给视图函数增加一些变量。
+@app.after_request:每次请求之后
+    def xxx(response):
+        return responsee
+@app.teardown_appcontext：不管是否有异常，注册的函数都会在每次请求之后执行。debug=False
+@app.context_processor: 上下文处理器 返回数据到所有的模板中
+def xxx(error):
+@app.errorhandler(404): 关闭debug模式
+def xxx(error)

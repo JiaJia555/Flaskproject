@@ -1,0 +1,20 @@
+1. 过滤条件
+    equals/not equals   .filter(Article.title == "title0")/.filter(Article.title != "title0")
+    and_
+    like                % 表示零个或多个字符的任意字符串;_（下划线）表示任何单个字符
+    or
+    and
+    in_/notin_
+    None                Null != 空
+    is_
+like 详情参考链接 https://blog.csdn.net/yu_ge_ge/article/details/79471816
+
+2. 外键及约束
+    导入                from sqlalchemy import ForeignKey
+    创建                uid = Column(Integer, ForeignKey('表.字段', ondelete='SET N
+    ondelete            删除的时候怎么做
+
+3. 表关系
+    一对多
+    # 反向访问属性
+    articles = relationship("Article", backref='author')

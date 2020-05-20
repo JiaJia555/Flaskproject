@@ -20,8 +20,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0ad09a7-349d-44d4-8622-86520a7e01c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Day02/url_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day02/url_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day04/template_extend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day04/template_extend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day08/flask_orm_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day08/flask_orm_filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day08/flask_orm_foreignkey.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day08/review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day09/flask_orm_classM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day09/flask_orm_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day09/flask_orm_sub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day09/review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_add_admin/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_add_admin/flask_script_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_add_admin/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_sqlalchemy_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_wtf_demo/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_wtf_demo/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_wtf_demo/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/flask_wtf_demo/templates/regist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/project_demo/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/project_demo/exts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/project_demo/flask_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/project_demo/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/project_demo/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day10/review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day11/flask_upload/flask_upload_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day11/flask_upload/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day11/flask_upload/templates/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day11/review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/hook_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/session_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/templates/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day12/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/exts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/flask_resultful_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/resultful_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/review" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day13/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask框架.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask框架.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day09/flask_orm_foreignkey.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day09/flask_orm_class11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day09/flask_orm_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day09/flask_orm_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/flask_orm_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +95,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PycharmProjects" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shelleyfu\Downloadbyjia\Flask框架\Day05\blue_demo\blueprints\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PythonProjects\Flask框架\Day11\flask_upload" />
+      <recent name="E:\PythonProjects\Flask框架\Day10\flask_add_admin" />
       <recent name="C:\Users\shelleyfu\Downloadbyjia\Flask框架\Day04\templates" />
       <recent name="C:\Users\shelleyfu\Downloadbyjia\Flask框架\Day03\templates" />
       <recent name="C:\Users\shelleyfu\Downloadbyjia\Flask框架" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.flask_orm_query">
-    <configuration name="firstflask" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.flask_resultful_demo">
+    <configuration name="flask_resultful_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask框架" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,11 +123,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day13" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day01/firstflask.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day13/flask_resultful_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flask_orm_curd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hook_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask框架" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,11 +144,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day07/flask_orm_curd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day12/hook_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +157,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flask_orm_curd_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask框架" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,11 +165,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day13" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day07/flask_orm_curd_demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day13/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flask_orm_query" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="resultful_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask框架" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,11 +186,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day13" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day07/flask_orm_query.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day13/resultful_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,7 +199,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flask_orm_type" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="session_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flask框架" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -156,11 +207,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day12" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day07/flask_orm_type.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day12/session_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,13 +222,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.flask_orm_query" />
-        <item itemvalue="Python.flask_orm_type" />
-        <item itemvalue="Python.flask_orm_curd_demo" />
-        <item itemvalue="Python.flask_orm_curd" />
-        <item itemvalue="Python.firstflask" />
+        <item itemvalue="Python.flask_resultful_demo" />
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.resultful_demo" />
+        <item itemvalue="Python.hook_demo" />
+        <item itemvalue="Python.session_demo" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED,SHOW_FIELDS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -208,10 +262,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="853" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587277558074">
+    <state x="632" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589512764422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="853" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1587277558074" />
+    <state x="632" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1589512764422" />
     <state x="379" y="0" key="#firstflask" timestamp="1588223122747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,33 +274,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588251858074" />
-    <state width="711" height="152" key="GridCell.Tab.0.bottom" timestamp="1588575624930">
+    <state width="1337" height="107" key="GridCell.Tab.0.bottom" timestamp="1589975383182">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="711" height="152" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588575624930" />
-    <state width="711" height="152" key="GridCell.Tab.0.center" timestamp="1588575624930">
+    <state width="1337" height="107" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589975383182" />
+    <state width="1337" height="107" key="GridCell.Tab.0.center" timestamp="1589975383182">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="711" height="152" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588575624930" />
-    <state width="711" height="152" key="GridCell.Tab.0.left" timestamp="1588575624930">
+    <state width="1337" height="107" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589975383182" />
+    <state width="1337" height="107" key="GridCell.Tab.0.left" timestamp="1589975383181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="711" height="152" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588575624930" />
-    <state width="711" height="152" key="GridCell.Tab.0.right" timestamp="1588575624930">
+    <state width="1337" height="107" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589975383181" />
+    <state width="1337" height="107" key="GridCell.Tab.0.right" timestamp="1589975383182">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="711" height="152" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588575624930" />
-    <state x="119" y="0" key="SettingsEditor" timestamp="1588304071113">
+    <state width="1337" height="107" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589975383182" />
+    <state x="119" y="0" key="SettingsEditor" timestamp="1589025277276">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="119" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588304071113" />
+    <state x="119" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589025277276" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1588212058511">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588212058511" />
-    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup" timestamp="1588385308094">
+    <state x="0" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588601827784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588385308094" />
+    <state x="0" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1588601827784" />
+    <state x="418" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589377811549">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="418" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589377811549" />
+    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup" timestamp="1589892781396">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589892781396" />
   </component>
 </project>

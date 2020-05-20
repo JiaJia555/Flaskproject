@@ -1,0 +1,77 @@
+cd E:\PythonProjects\Flask框架
+pipenv shell                    进入到虚拟环境
+pip install flask_sqlalchemy
+pip install flask_script
+pip install flask-migrate -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+pip install flask-wtf
+
+cd E:\PythonProjects\Flask框架\Day10\project_demo
+ls
+python manage.py db init
+python manage.py db migrate     不会真正把模型映射到数据库
+python manage.py db upgrade     会真正把模型映射到数据库
+当改变表格，添加age等，再执行一次，字段长度改变不算
+python manage.py db migrate
+python manage.py db upgrade
+1. flask_sqlalchemy
+安装
+    pip install flask_sqlalchemy
+导入
+    from flask_sqlalchemy import SQLAlchemy
+    db = SQLAlchemy(app)
+模型定义
+    class User(db.Model):
+        __tablename__ = "user"
+        id = db.Column(db.Integer, primary_key = True, autoincrement= True)
+        name = db.Column(db.String(50))
+
+
+    class Article(db.Model):
+        # 外键
+        uid = db.Column(db.Integer, db.ForeignKey("user.id"))
+        author = db.relationship("User", backref='articles')
+映射到数据库
+    db.drop_all()
+    db.create_all()
+
+添加数据
+    user = User(name="xxx")
+查询数据
+    User.query.all()
+    db.session.query(User).all()
+
+
+2. Flask_Script
+安装
+    pip install flask_script
+在命令行执行自己定义的函数
+    from flask_script import Manager
+    from xxx import app
+    manage = Manager(app)
+
+    @manage.command
+    def index():
+        print('hello')
+给命令行传参
+    @manage.option('-u', '--name', dest='username')
+    def hello(username):
+        print("hello", username)
+
+    python manage.py hello -u fu
+项目目录
+    static
+    templates
+    models  模型文件
+    config
+    manage  数据库映射文件
+    app.py  项目入口文件
+
+
+3. 表单验证
+安装
+    pip install flask-wtf
+注册表单验证
+    forms.py
+    from wtforms import Form
+    class RegistForm(Form):
+        username = StringField(validators=[length(min=3, max=10, message="用户名长度不正确")])

@@ -10,7 +10,7 @@ from sqlalchemy import Table
 
 
 HOSTNAME = '127.0.0.1'
-DATABASE = 'demo0422'
+DATABASE = 'demo0424'
 PORT = 3306
 USERNAME = 'root'
 PASSWORD = 'root'
@@ -23,32 +23,45 @@ Base = declarative_base(engine)
 
 
 class User(Base):
-    __tablename__ = "user2"
+    __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     username = Column(String(50), nullable=False)
-    gender = Column(Enum('男', '女'))
+    city = Column(String(50))
     age = Column(Integer)
 
+    def __str__(self):
+        return "User{username: %s}" % self.username
 
 # Base.metadata.drop_all()
 Base.metadata.create_all()
+
 session = sessionmaker(bind=engine)()
 
-# for x in range(10):
-#     user = User(username= 'futongxue%s' % x, gender='男', age=random.randint(10, 25))
-#     session.add(user)
+# 查询和王同学相同城市和年龄的
+
+# user = session.query(User).filter(User.username == 'wang').first()
+# print(user.city)
+# print(user.age)
 #
-# session.commit()
+# result = session.query(User).filter(User.city == user.city, User.age == user.age)
+# for data in result:
+#     print(data)
 
+# 子查询 label 重新命名
+# sub = session.query(User.city.label('city'), User.age.label('age')).filter(User.username == 'wang').subquery()
 
-# 按照性别分组 并求和 聚合函数
-# result = session.query(User.gender, func.count(User.id)).group_by(User.gender).all()
-
-
-# having
-# result = session.query(User.age, func.count(User.id)).group_by(User.age).having(User.age<18).all()
+# c column
+# result = session.query(User).filter(User.city == sub.c.city, User.age == sub.c.age)
 # print(result)
+# for data in result:
+#     print(data)
 
-# join
-# https://blog.csdn.net/zhengsy_/article/details/90733864
+
+
+
+
+
+
+
+

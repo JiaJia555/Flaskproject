@@ -1,0 +1,37 @@
+1. 表关系
+一对一
+    uselist = False
+
+多对多(中间表的定义)
+    from sqlalchemy import table
+    mytable = Table("mytable", Base.metadata,
+                Column('mytable_id', Integer, primary_key=True),
+                Column('value', String(50))
+        )
+
+    classes = relationship('Classes', backref='teacher', secondary=teacher_classes)
+
+2. 排序
+    session.query(模型).order_by(字段).all()
+        默认升序 asc
+        降序 desc()
+    在模型中定义
+        __mapper_args__ = {
+        "order_by": id.desc()
+        "order_bu": -id
+     }
+
+3. limit offset 切片
+    limit 条数
+    offset 偏移量
+    切片
+
+翻页功能
+    0-2
+    articles = session.query(Article).offset(0).limit(3).all()
+    2-4
+    articles = session.query(Article).offset(2).limit(3).all()
+
+4. 分组和之后的筛选
+    group_by 前面查询的字段和分组的字段保持一致
+    having 分组之后的筛选 不是对原始数据进行查询
